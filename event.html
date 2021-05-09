@@ -16,12 +16,17 @@ gtag("config", "G-VF4ZT4HTG3");
 <script>
 function trackCTA(){
 	// 送出事件紀錄
-	gtag("event", "點擊", {
+	/*gtag("event", "點擊", {
 		"event_category":"CTA",
 		"event_label":"頁面標題",
 		"value": 1
+	});*/
+	gtag("event", "timing_complete", {
+		"name": "註冊成功",
+		"event_category": "會員",
+		"value": 60000
 	});
-	alert("Event Sent!");
+
 }
 </script>
 </head>
